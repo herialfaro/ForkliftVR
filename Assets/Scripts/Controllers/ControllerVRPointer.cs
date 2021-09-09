@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class ControllerVRPointer : MonoBehaviour
 {
     [SerializeField] private float m_DefaultLength = 5.0f;
     public GameObject m_Dot;
-    //public VRInputModule 
+    [SerializeField] private VRInputModule m_InputModule; 
     private LineRenderer m_LineRender = null;
 
     private void Awake()
@@ -20,7 +21,9 @@ public class ControllerVRPointer : MonoBehaviour
 
     public void updateLine()
     {
-        float targetLength = m_DefaultLength;
+
+        PointerEventData data = m_InputModule.GetData();
+        float targetLength = data.pointerCurrentRaycast.distance == 0 ? m_DefaultLength : data.pointerCurrentRaycast.distance;
 
         RaycastHit hit = CreateRaycast(targetLength);
 
