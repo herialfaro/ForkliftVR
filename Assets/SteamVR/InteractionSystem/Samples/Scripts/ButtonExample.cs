@@ -49,5 +49,6 @@ namespace Valve.VR.InteractionSystem.Sample
             if (rigidbody != null)
                 rigidbody.isKinematic = false;
         }
+
     }
 }
