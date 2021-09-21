@@ -6,6 +6,7 @@ public class MovePosition : MonoBehaviour
 {
     Rigidbody rb;
     public float force;
+    
 
     void Start()
     {

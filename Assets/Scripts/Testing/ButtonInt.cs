@@ -8,7 +8,9 @@ using Valve.VR;
     public class ButtonInt : MonoBehaviour
     {
         public HoverButton hoverButton;
-        MovePosition movePosition;
+        public MovePosition movePosition
+        private bool move;
+       
        
 
 
@@ -19,8 +21,20 @@ using Valve.VR;
 
         private void OnButtonDown(Hand hand)
         {
+           if (!move)
+           {
+
             StartCoroutine(DoMove());
+            move = true;
+               
+           }
+           else
+           {
+            move = false;
+           }
         }
+
+        
 
 
         private IEnumerator DoMove()
