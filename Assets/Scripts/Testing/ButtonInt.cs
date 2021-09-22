@@ -8,7 +8,7 @@ using Valve.VR;
     public class ButtonInt : MonoBehaviour
     {
         public HoverButton hoverButton;
-        public MovePosition movePosition
+    public MovePosition movePosition;
         private bool move;
        
        
