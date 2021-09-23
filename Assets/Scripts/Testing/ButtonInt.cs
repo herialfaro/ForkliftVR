@@ -23,8 +23,8 @@ using Valve.VR;
 
     private IEnumerator DoMove()
     {
-        movePosition = FindObjectOfType<MovePosition>();
-        movePosition.ForMove();
+        //movePosition = FindObjectOfType<MovePosition>();
+        this.movePosition.ForMove();
 
         // Rigidbody rigidbody = moving.GetComponent<Rigidbody>();
 
