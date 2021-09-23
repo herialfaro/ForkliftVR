@@ -9,9 +9,11 @@ public class TrailRender : MonoBehaviour
     Transform NextPos;
     public int nextPosIndex;
     public float speed;
-    Vector3 a;
+  //  public float destroyObjTime;
+
     void Start()
     {
+       // StartCoroutine(DestroyObj());
         NextPos = Targets[0];
     }
 
@@ -28,7 +30,7 @@ public class TrailRender : MonoBehaviour
             nextPosIndex++;
             if (nextPosIndex >= Targets.Length)
             {
-                nextPosIndex = 0;
+                Destroy(this.gameObject);
             }
             NextPos = Targets[nextPosIndex];
         }
@@ -38,5 +40,5 @@ public class TrailRender : MonoBehaviour
         }
     }
 
-  
+   
 }

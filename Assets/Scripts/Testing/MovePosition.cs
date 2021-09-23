@@ -6,7 +6,8 @@ public class MovePosition : MonoBehaviour
 {
     Rigidbody rb;
     public float force;
-    
+    public bool moving = false;
+
 
     void Start()
     {
@@ -16,11 +17,22 @@ public class MovePosition : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (moving)
+        {
+            rb.AddForce(transform.forward * force);
+        }
     }
 
-    public void MoveCar()
+
+    public void ForMove()
     {
-        rb.AddForce(transform.forward * force);
+        if (!moving)
+        {
+            moving = true;
+        }
+        else
+        {
+            moving = false;
+        }
     }
 }

@@ -49,7 +49,8 @@ MonoBehaviour:
   - {fileID: 4980792811509331529, guid: e1732751827bf4a488cfe49753ae2f62, type: 3}
   - {fileID: 2890871008915860352, guid: da35f25fe1f006e4a893bd4e01007525, type: 3}
   nextPosIndex: 0
-  speed: 25
+  speed: 50
+  destroyObjTime: 40
 --- !u!96 &1894855032738396530
 TrailRenderer:
   serializedVersion: 2
