@@ -8,10 +8,14 @@ public class MovePosition : MonoBehaviour
     public float force;
     public bool moving = false;
 
+  
+    
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+      
     }
 
     // Update is called once per frame
