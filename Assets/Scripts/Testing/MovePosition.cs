@@ -21,6 +21,6 @@ public class MovePosition : MonoBehaviour
 
     public void MoveCar()
     {
-        rb.AddForce(transform.up * force);
+        rb.AddForce(transform.forward * force);
     }
 }
