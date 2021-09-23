@@ -51,51 +51,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/CircularDrive.cs",
-			"settings":
-			{
-				"buffer_size": 16368,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs",
-			"settings":
-			{
-				"buffer_size": 5092,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDrive.cs",
-			"settings":
-			{
-				"buffer_size": 4456,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/HapticRack.cs",
-			"settings":
-			{
-				"buffer_size": 2136,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/JoystickController.cs",
-			"settings":
-			{
-				"buffer_size": 1355,
-				"encoding": "UTF-8 with BOM",
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -127,23 +82,23 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
-	"expanded_folders":
-	[
-	],
 	"file_history":
 	[
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Sublime Project/Forklift_project_codes.sublime-project",
+		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/JoystickController.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/CircularDrive.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/HapticRack.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDrive.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/PARCIALS PROJECTS/Second Partial/Corporate Ability/Assets/Scripts/Employee.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/Controllers/SteringWheelController.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearMapping.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimation.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/InteractableHoverEvents.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Teleport/Scripts/Teleport.cs",
-		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDrive.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/Characters/Forklift.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Samples/Scripts/ButtonExample.cs",
-		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/JoystickController.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Samples/BuggyBuddy/BuggyBuddy.cs",
-		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/Interactable.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/Hand.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/Input Module/VRInputModule.cs",
@@ -184,10 +139,8 @@
 		[
 		],
 		"reverse": false,
-		"scrollbar_highlights": true,
 		"show_context": true,
 		"use_buffer2": true,
-		"use_gitignore": true,
 		"whole_word": false,
 		"wrap": true
 	},
@@ -196,175 +149,6 @@
 		{
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/CircularDrive.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 16368,
-						"regions":
-						{
-							"bookmarks":
-							{
-								"flags": 144,
-								"icon": "bookmark",
-								"regions":
-								[
-									[
-										348,
-										348
-									]
-								],
-								"scope": "bookmarks"
-							}
-						},
-						"selection":
-						[
-							[
-								12783,
-								12783
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 7383.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Samples/Scripts/InteractableExample.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5092,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1242,
-								1242
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 378.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearDrive.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4456,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3837,
-								3837
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1827.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/HapticRack.cs",
-					"selected": true,
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2136,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 324.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"stack_multiselect": false,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/JoystickController.cs",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1355,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"stack_multiselect": false,
-					"type": "text"
-				}
 			]
 		}
 	],
@@ -404,7 +188,7 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "Forklift_project_codes.sublime-project",
+	"project": "Forklift_project_codes.sublime-project.sublime-project",
 	"replace":
 	{
 		"height": 50.0
