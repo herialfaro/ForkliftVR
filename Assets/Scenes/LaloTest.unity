@@ -494,6 +494,8 @@ GameObject:
   - component: {fileID: 417299849}
   - component: {fileID: 417299848}
   - component: {fileID: 417299852}
+  - component: {fileID: 417299853}
+  - component: {fileID: 417299854}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -595,6 +597,41 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &417299853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417299847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c8a2ef6e5d68b48b38c250ddf955dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  throttleWheels:
+  - {fileID: 1666816720}
+  - {fileID: 90435159}
+  - {fileID: 1232118255}
+  - {fileID: 445050453}
+  steeringWheels:
+  - {fileID: 90435159}
+  - {fileID: 445050453}
+  strengthCoefficient: 200000
+  maxTurn: 20
+--- !u!114 &417299854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 417299847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a2aaed30531ac494eaa06f79496ea9e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wheelDampening: 0
 --- !u!1 &445050451
 GameObject:
   m_ObjectHideFlags: 0
@@ -1406,13 +1443,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1672205245}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: 0.4661882, z: -0, w: 0.8846856}
   m_LocalPosition: {x: -4.5349965, y: 0.18394487, z: 0.015795916}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 55.574, z: 0}
 --- !u!1 &1905434059
 GameObject:
   m_ObjectHideFlags: 0
