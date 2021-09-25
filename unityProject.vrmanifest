@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.forkliftvr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\giher\\Documents\\Universidad\\Septimo Semestre\\Advance Videogame\\GitHub\\ForkliftVR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\kbs_s\\Documents\\GitHub\\ForkliftVR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "ForkliftVR [Testing]"

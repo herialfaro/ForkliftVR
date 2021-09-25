@@ -105,6 +105,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Single Acceleration
+        {
+            get
+            {
+                return SteamVR_Actions.default_Acceleration;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
