@@ -321,7 +321,7 @@ GameObject:
   - component: {fileID: 90435158}
   - component: {fileID: 90435159}
   m_Layer: 0
-  m_Name: Wheel (1)
+  m_Name: RearLeftWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,8 +351,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 90000
+    damper: 9000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -495,8 +495,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.8018824, y: 1.8658099, z: 1}
-  m_Center: {x: 0.0052211415, y: -0.4329064, z: 0}
+  m_Size: {x: 0.9646432, y: 1.1087439, z: 1}
+  m_Center: {x: -0.0056581222, y: -0.05437385, z: 0}
 --- !u!23 &417299849
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -567,7 +567,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 417299847}
   serializedVersion: 2
-  m_Mass: 1000
+  m_Mass: 1500
   m_Drag: 0.05
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -587,17 +587,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c8a2ef6e5d68b48b38c250ddf955dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  motorForce: 0
-  breakForce: 0
-  maxSteerAngle: 0
-  frontLeftWheel: {fileID: 0}
-  frontRightWheel: {fileID: 0}
-  rearLeftWheel: {fileID: 0}
-  rearRightWheel: {fileID: 0}
-  frontLeftTransform: {fileID: 0}
-  frontRightTransform: {fileID: 0}
-  rearLeftTransform: {fileID: 0}
-  rearRightTransform: {fileID: 0}
+  motorForce: 1000
+  breakForce: 3000
+  maxSteerAngle: 30
+  frontLeftWheel: {fileID: 1666816720}
+  frontRightWheel: {fileID: 1232118255}
+  rearLeftWheel: {fileID: 90435159}
+  rearRightWheel: {fileID: 445050453}
+  frontLeftTransform: {fileID: 2077340920}
+  frontRightTransform: {fileID: 1650134759}
+  rearLeftTransform: {fileID: 457532649}
+  rearRightTransform: {fileID: 1905434060}
 --- !u!1 &445050451
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 445050452}
   - component: {fileID: 445050453}
   m_Layer: 0
-  m_Name: Wheel (3)
+  m_Name: RearRightWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,8 +639,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 90000
+    damper: 9000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -670,9 +670,8 @@ GameObject:
   - component: {fileID: 457532649}
   - component: {fileID: 457532652}
   - component: {fileID: 457532651}
-  - component: {fileID: 457532650}
   m_Layer: 0
-  m_Name: Cylinder (1)
+  m_Name: RearLeftTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -692,19 +691,6 @@ Transform:
   m_Father: {fileID: 1483397152}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &457532650
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457532648}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 2.0000007, z: 1.0000004}
-  m_Center: {x: 0.00000005960466, y: 0, z: -0.00000032782555}
 --- !u!23 &457532651
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -984,7 +970,7 @@ GameObject:
   - component: {fileID: 1232118254}
   - component: {fileID: 1232118255}
   m_Layer: 0
-  m_Name: Wheel (2)
+  m_Name: FrontRightWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1014,8 +1000,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 90000
+    damper: 9000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -1237,9 +1223,8 @@ GameObject:
   - component: {fileID: 1650134759}
   - component: {fileID: 1650134762}
   - component: {fileID: 1650134761}
-  - component: {fileID: 1650134760}
   m_Layer: 0
-  m_Name: Cylinder (3)
+  m_Name: FrontRightTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1259,19 +1244,6 @@ Transform:
   m_Father: {fileID: 1483397152}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &1650134760
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1650134758}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 2.0000007, z: 1.0000004}
-  m_Center: {x: 0.0000001192093, y: 0, z: 0.0000001490116}
 --- !u!23 &1650134761
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1330,7 +1302,7 @@ GameObject:
   - component: {fileID: 1666816719}
   - component: {fileID: 1666816720}
   m_Layer: 0
-  m_Name: Wheel
+  m_Name: FrontLeftWheel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1360,8 +1332,8 @@ WheelCollider:
   m_Center: {x: 0, y: 0, z: 0}
   m_Radius: 0.5
   m_SuspensionSpring:
-    spring: 35000
-    damper: 4500
+    spring: 90000
+    damper: 9000
     targetPosition: 0.5
   m_SuspensionDistance: 0.3
   m_ForceAppPointDistance: 0
@@ -1473,9 +1445,8 @@ GameObject:
   - component: {fileID: 1905434060}
   - component: {fileID: 1905434063}
   - component: {fileID: 1905434062}
-  - component: {fileID: 1905434061}
   m_Layer: 0
-  m_Name: Cylinder (2)
+  m_Name: RearRightTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1495,19 +1466,6 @@ Transform:
   m_Father: {fileID: 1483397152}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &1905434061
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905434059}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 2.0000007, z: 1.0000004}
-  m_Center: {x: 0.0000001192093, y: 0, z: -0.00000032782555}
 --- !u!23 &1905434062
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1566,9 +1524,8 @@ GameObject:
   - component: {fileID: 2077340920}
   - component: {fileID: 2077340923}
   - component: {fileID: 2077340922}
-  - component: {fileID: 2077340921}
   m_Layer: 0
-  m_Name: Cylinder
+  m_Name: FrontLeftTransform
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1588,19 +1545,6 @@ Transform:
   m_Father: {fileID: 1483397152}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!65 &2077340921
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2077340919}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0000004, y: 2.0000007, z: 1.0000004}
-  m_Center: {x: 0.00000005960466, y: 0, z: 0.0000003874302}
 --- !u!23 &2077340922
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1725,7 +1669,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2147286640}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: -4.53, y: 1, z: -3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
