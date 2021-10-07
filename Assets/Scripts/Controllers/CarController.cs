@@ -7,7 +7,7 @@ public class CarController : MonoBehaviour
     private const string HORIZONTAL = "Horizontal";
     private const string VERTICAL = "Vertical";
 
-    private float horixontalInput;
+    private float horizontalInput;
     private float vertivalInput;
     private float currentBreakForce;
     private bool isBreaking;
@@ -59,14 +59,14 @@ public class CarController : MonoBehaviour
 
     private void GetInput()
     {
-        horixontalInput = Input.GetAxis(HORIZONTAL);
+        horizontalInput = Input.GetAxis(HORIZONTAL);
         vertivalInput = Input.GetAxis(VERTICAL);
         isBreaking = Input.GetKey(KeyCode.Space);
     }
 
     private void HandleSteering()
     {
-        currentSteerAngle = maxSteerAngle * horixontalInput;
+        currentSteerAngle = maxSteerAngle * horizontalInput;
         frontLeftWheel.steerAngle = currentSteerAngle;
         frontRightWheel.steerAngle = currentSteerAngle;
     }
