@@ -376,6 +376,16 @@ PrefabInstance:
       propertyPath: linearMapping
       value: 
       objectReference: {fileID: 766844344}
+    - target: {fileID: 2320135635619949021, guid: 11eb63a954fc992469a5088dc849cd6e,
+        type: 3}
+      propertyPath: motorForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2320135635619949021, guid: 11eb63a954fc992469a5088dc849cd6e,
+        type: 3}
+      propertyPath: aceleractionForce
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6595871936880970119, guid: 11eb63a954fc992469a5088dc849cd6e,
         type: 3}
       propertyPath: m_LocalPosition.x

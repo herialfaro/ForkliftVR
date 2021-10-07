@@ -16,7 +16,10 @@ namespace Valve.VR.InteractionSystem
         private bool isBreaking;
         private float currentSteerAngle;
 
+
+        [Header("Movement")]
         [SerializeField] private float motorForce;
+        [SerializeField] private float aceleractionForce;
         [SerializeField] private float negativeMotorForce;
         [SerializeField] private float breakForce;
         [SerializeField] private float maxSteerAngle;
@@ -69,7 +72,7 @@ namespace Valve.VR.InteractionSystem
             
             if (linearMapping.value < 0.4)
             {
-                motorForce = 1000;
+                motorForce = aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
                 Debug.Log("Adding force");
@@ -77,7 +80,7 @@ namespace Valve.VR.InteractionSystem
 
             if (linearMapping.value > 0.6)
             {
-                motorForce = -1000;
+                motorForce = -aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
             }
