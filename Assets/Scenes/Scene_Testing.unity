@@ -2886,6 +2886,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forklift_V1
       objectReference: {fileID: 0}
+    - target: {fileID: 7428677768603479513, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428677768603479513, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: frontLeftTransform
+      value: 
+      objectReference: {fileID: 1821542904}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: frontRightTransform
+      value: 
+      objectReference: {fileID: 1821542904}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: motorForce
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: aceleractionForce
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 7707510669510175862, guid: 348a05887cb9b274a86c922d3bd7ecfe,
         type: 3}
       propertyPath: m_Size.y
@@ -2895,6 +2925,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Center.y
       value: 0.8109368
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707510669935400080, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7889230551609145002, guid: 348a05887cb9b274a86c922d3bd7ecfe,
         type: 3}
@@ -3391,6 +3426,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1680193832}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1821542904 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8949697571665808175, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 1399176149}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1825763020
 GameObject:
   m_ObjectHideFlags: 0
