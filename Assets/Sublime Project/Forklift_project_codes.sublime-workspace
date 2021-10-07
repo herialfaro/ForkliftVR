@@ -84,6 +84,8 @@
 	},
 	"expanded_folders":
 	[
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Sublime Project/Assets/Scripts",
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts"
 	],
 	"file_history":
 	[
@@ -119,7 +121,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 24.0
 	},
 	"find_in_files":
 	{
@@ -158,7 +160,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 24.0
 	},
 	"input":
 	{
@@ -195,7 +197,7 @@
 	"project": "Forklift_project_codes.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 44.0
 	},
 	"save_all_on_build": true,
 	"select_file":
