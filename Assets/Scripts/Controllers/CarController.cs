@@ -43,9 +43,9 @@ public class CarController : MonoBehaviour
 
     private void HandleMotor()
     {
-        frontLeftWheel.motorTorque = vertivalInput * motorForce;
-        frontRightWheel.motorTorque = vertivalInput * motorForce;
-        currentBreakForce = isBreaking ? breakForce : 0f;
+        rearLeftWheel.motorTorque = vertivalInput * motorForce;
+        rearRightWheel.motorTorque = vertivalInput * motorForce;
+        currentBreakForce = isBreaking ? breakForce : 0.05f;
         
         if (isBreaking)
         {
@@ -72,8 +72,8 @@ public class CarController : MonoBehaviour
     private void HandleSteering()
     {
         currentSteerAngle = maxSteerAngle * horizontalInput;
-        frontLeftWheel.steerAngle = currentSteerAngle;
-        frontRightWheel.steerAngle = currentSteerAngle;
+        rearLeftWheel.steerAngle = currentSteerAngle;
+        rearRightWheel.steerAngle = currentSteerAngle;
     }
 
     private void UpdateWheels()
