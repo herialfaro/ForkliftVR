@@ -1050,6 +1050,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2.0531201, z: 1}
   m_Center: {x: 0, y: 0.52656007, z: 0}
+--- !u!4 &1083655366 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7707510669877931773, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083833053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1100394285
 GameObject:
   m_ObjectHideFlags: 0
@@ -1625,6 +1631,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5773820328439834254, guid: 9dc81b554771b5f49af269f1a7925ac8,
     type: 3}
   m_PrefabInstance: {fileID: 1845292490}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1541093995 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7707510670326609764, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083833053}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1738186692
 PrefabInstance:
@@ -2214,6 +2226,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forklift_V1
       objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: moving
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: frontRightTransform
+      value: 
+      objectReference: {fileID: 1083655366}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: frontLeftTransform
+      value: 
+      objectReference: {fileID: 1541093995}
     - target: {fileID: 7889230551609145002, guid: 348a05887cb9b274a86c922d3bd7ecfe,
         type: 3}
       propertyPath: m_LocalPosition.x
