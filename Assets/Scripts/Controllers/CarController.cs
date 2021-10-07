@@ -17,6 +17,7 @@ namespace Valve.VR.InteractionSystem
         private float currentSteerAngle;
 
         [SerializeField] private float motorForce;
+        [SerializeField] private float negativeMotorForce;
         [SerializeField] private float breakForce;
         [SerializeField] private float maxSteerAngle;
 
@@ -65,11 +66,25 @@ namespace Valve.VR.InteractionSystem
 
         private void AddForceCar()
         {
-            if (linearMapping.value > 0)
+            
+            if (linearMapping.value < 0.4)
             {
+                motorForce = 1000;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
                 Debug.Log("Adding force");
+            }
+
+            if (linearMapping.value > 0.6)
+            {
+                motorForce = -1000;
+                rearLeftWheel.motorTorque = motorForce;
+                rearRightWheel.motorTorque = motorForce;
+            }
+
+            if (linearMapping.value < 0.58 || linearMapping.value > 0.38)
+            {
+                motorForce = 0;
             }
         }
 
