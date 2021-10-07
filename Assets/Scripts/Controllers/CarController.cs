@@ -88,6 +88,7 @@ namespace Valve.VR.InteractionSystem
             if (linearMapping.value < 0.8 || linearMapping.value > 0.2)
             {
                 motorForce = 0;
+                
             }
         }
 
