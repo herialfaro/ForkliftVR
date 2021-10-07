@@ -909,6 +909,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearMapping: {fileID: 0}
   motorForce: 1000
+  aceleractionForce: 0
+  negativeMotorForce: 0
   breakForce: 3000
   maxSteerAngle: 30
   moving: 1
@@ -1460,7 +1462,7 @@ PrefabInstance:
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 3.5558543
+      value: 0.42199993
       objectReference: {fileID: 0}
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
@@ -1470,13 +1472,13 @@ PrefabInstance:
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 2.1353443
+      value: -0.48389626
       objectReference: {fileID: 0}
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7707510669510175863}
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_Motor.targetVelocity
@@ -1610,7 +1612,7 @@ PrefabInstance:
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: 3.3288543
+      value: 0.19499993
       objectReference: {fileID: 0}
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
@@ -1620,13 +1622,13 @@ PrefabInstance:
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: 2.1353433
+      value: -0.4838972
       objectReference: {fileID: 0}
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_ConnectedBody
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 7707510669510175863}
     - target: {fileID: 1014566880949728173, guid: 378c9dae323b04142978cb44b617b436,
         type: 3}
       propertyPath: m_MassScale
