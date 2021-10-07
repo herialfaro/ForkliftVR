@@ -51,6 +51,15 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Controllers/CarController.cs",
+			"settings":
+			{
+				"buffer_size": 4486,
+				"encoding": "UTF-8 with BOM",
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -84,11 +93,14 @@
 	},
 	"expanded_folders":
 	[
-		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Sublime Project/Assets/Scripts",
-		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts"
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Sublime Project/Assets/Scripts"
 	],
 	"file_history":
 	[
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Controllers/CarController.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimation.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Testing/TEST_MenuManager.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Testing/TEST_elevate.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Sublime Project/Forklift_project_codes.sublime-project",
 		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Sublime Project/Forklift_project_codes.sublime-project",
 		"/D/giher/Documents/Universidad/Septimo Semestre/Advance Videogame/GitHub/ForkliftVR/Assets/Scripts/JoystickController.cs",
@@ -153,8 +165,39 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Controllers/CarController.cs",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4486,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2847,
+								2847
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 920.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -206,6 +249,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"car",
+				"Scripts\\Controllers\\CarController.cs"
+			],
 			[
 				"hap",
 				"SteamVR\\InteractionSystem\\Core\\Scripts\\HapticRack.cs"
