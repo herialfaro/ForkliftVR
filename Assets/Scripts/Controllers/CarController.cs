@@ -70,7 +70,7 @@ namespace Valve.VR.InteractionSystem
         private void AddForceCar()
         {
             
-            if (linearMapping.value < 0.4)
+            if (linearMapping.value < 0.1)
             {
                 motorForce = aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
@@ -78,14 +78,14 @@ namespace Valve.VR.InteractionSystem
                 Debug.Log("Adding force");
             }
 
-            if (linearMapping.value > 0.6)
+            if (linearMapping.value > 0.9)
             {
                 motorForce = -aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
             }
 
-            if (linearMapping.value < 0.58 || linearMapping.value > 0.38)
+            if (linearMapping.value < 0.8 || linearMapping.value > 0.2)
             {
                 motorForce = 0;
             }
