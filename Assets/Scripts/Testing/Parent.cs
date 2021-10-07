@@ -7,7 +7,7 @@ public class Parent : MonoBehaviour
 
     public Transform player;
     public Transform car;
-    public bool b;
+    public bool isParenting;
 
     private void Update()
     {
@@ -20,7 +20,7 @@ public class Parent : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             player.SetParent(car);
-            b = true;
+            isParenting = true;
         }
       
     }

@@ -16,7 +16,7 @@ public class TransformPosition : MonoBehaviour
     void Update()
     {
        
-            if (parent.b)
+            if (parent.isParenting)
             {
                 transform.position = carPos.position;                
                 Debug.Log("Newpos");

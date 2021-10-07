@@ -8,7 +8,7 @@ using Valve.VR;
     public class ButtonInt : MonoBehaviour
     {
     public HoverButton hoverButton;
-    public MovePosition movePosition;
+    public CarController carController;
 
     private void Start()
     {
@@ -24,7 +24,7 @@ using Valve.VR;
     private IEnumerator DoMove()
     {
         //movePosition = FindObjectOfType<MovePosition>();
-        this.movePosition.ForMove();
+        this.carController.ForMove();
 
         // Rigidbody rigidbody = moving.GetComponent<Rigidbody>();
 

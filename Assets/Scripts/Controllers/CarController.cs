@@ -17,7 +17,9 @@ public class CarController : MonoBehaviour
     [SerializeField] private float breakForce;
     [SerializeField] private float maxSteerAngle;
 
-
+    [SerializeField] private bool moving;
+    
+    [Header ("Wheels")]
     [SerializeField] private WheelCollider frontLeftWheel;
     [SerializeField] private WheelCollider frontRightWheel;
     [SerializeField] private WheelCollider rearLeftWheel;
@@ -30,10 +32,13 @@ public class CarController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        GetInput();
-        HandleMotor();
-        HandleSteering();
-        UpdateWheels();
+        if (moving)
+        {
+            GetInput();
+            HandleMotor();
+            HandleSteering();
+            UpdateWheels();
+        }
     }
 
     private void HandleMotor()
@@ -86,5 +91,17 @@ public class CarController : MonoBehaviour
         wheelCollider.GetWorldPose(out pos, out rot);
         wheelTransform.rotation = rot;
         wheelTransform.position = pos;
+    }
+
+    public void ForMove()
+    {
+        if (!moving)
+        {
+            moving = true;
+        }
+        else
+        {
+            moving = false;
+        }
     }
 }
