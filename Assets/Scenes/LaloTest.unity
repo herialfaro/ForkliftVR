@@ -402,6 +402,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!4 &613600543 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8949697571665808175, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+    type: 3}
+  m_PrefabInstance: {fileID: 7707510668883154403}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &651092978
 GameObject:
   m_ObjectHideFlags: 0
@@ -979,6 +985,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Forklift_V1
       objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: motorForce
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: aceleractionForce
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7707510669510175856, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: frontLeftTransform
+      value: 
+      objectReference: {fileID: 613600543}
     - target: {fileID: 7889230551609145002, guid: 348a05887cb9b274a86c922d3bd7ecfe,
         type: 3}
       propertyPath: m_LocalPosition.x

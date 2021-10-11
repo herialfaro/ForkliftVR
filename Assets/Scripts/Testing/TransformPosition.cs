@@ -19,7 +19,7 @@ public class TransformPosition : MonoBehaviour
             if (parent.isParenting)
             {
                 transform.position = carPos.position;                
-                Debug.Log("Newpos");
+             //   Debug.Log("Newpos");
             }
         
     }

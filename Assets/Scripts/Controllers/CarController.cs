@@ -13,18 +13,19 @@ namespace Valve.VR.InteractionSystem
         private float horizontalInput;
         private float vertivalInput;
         private float currentBreakForce;
-        private bool isBreaking;
         private float currentSteerAngle;
+
+        
 
 
         [Header("Movement")]
         [SerializeField] private float motorForce;
         [SerializeField] private float aceleractionForce;
-        [SerializeField] private float negativeMotorForce;
         [SerializeField] private float breakForce;
         [SerializeField] private float maxSteerAngle;
 
         [SerializeField] private bool moving;
+        [SerializeField] private bool isBreaking;
 
         [Header("Wheels")]
         [SerializeField] private WheelCollider frontLeftWheel;
@@ -51,6 +52,7 @@ namespace Valve.VR.InteractionSystem
                 HandleSteering();
                 UpdateWheels();
                 AddForceCar();
+                ApplyBreaking();
             }
         }
 
@@ -58,12 +60,7 @@ namespace Valve.VR.InteractionSystem
         {
             rearLeftWheel.motorTorque = vertivalInput * motorForce;
             rearRightWheel.motorTorque = vertivalInput * motorForce;
-            currentBreakForce = isBreaking ? breakForce : 0.05f;
-
-            if (isBreaking)
-            {
-                ApplyBreaking();
-            }
+          
 
         }
 
@@ -76,6 +73,7 @@ namespace Valve.VR.InteractionSystem
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
                 Debug.Log("Adding force");
+                isBreaking = false;
             }
 
             if (linearMapping.value > 0.9)
@@ -83,21 +81,30 @@ namespace Valve.VR.InteractionSystem
                 motorForce = aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
+                isBreaking = false;
             }
 
-            if (linearMapping.value < 0.8 || linearMapping.value > 0.2)
-            {
-                motorForce = 0;
-                
+            if (linearMapping.value < 0.8 && linearMapping.value > 0.2)
+            {              
+                isBreaking = true;
             }
         }
 
         private void ApplyBreaking()
         {
-            frontRightWheel.brakeTorque = currentBreakForce;
-            frontLeftWheel.brakeTorque = currentBreakForce;
-            rearRightWheel.brakeTorque = currentBreakForce;
-            rearLeftWheel.brakeTorque = currentBreakForce;
+            if (isBreaking)
+            {         
+                rearRightWheel.brakeTorque = breakForce;
+                rearLeftWheel.brakeTorque = breakForce;
+
+                rearRightWheel.motorTorque = 0;
+                rearLeftWheel.motorTorque = 0;
+            }
+            else
+            {
+                rearRightWheel.brakeTorque = 0;
+                rearLeftWheel.brakeTorque = 0;
+            }
         }
 
         private void GetInput()
