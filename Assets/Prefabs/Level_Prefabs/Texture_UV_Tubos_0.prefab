@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3296089399163344428}
   - component: {fileID: 1878515947287927177}
   - component: {fileID: 4464513109806034243}
+  - component: {fileID: 5585129222631357579}
   m_Layer: 0
   m_Name: Texture_UV_Tubos_0
   m_TagString: Untagged
@@ -79,3 +80,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5585129222631357579
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2807395635328683158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.019871907, y: 0.019871907, z: 0.020000007}
+  m_Center: {x: 0, y: 0, z: 0}
