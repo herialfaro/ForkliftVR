@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 8349799463386411880}
   - component: {fileID: 4922339603709164749}
   - component: {fileID: 7181937951213553671}
+  - component: {fileID: 1404858273976347724}
   m_Layer: 0
   m_Name: Texture_UV_PilarPlayTestMap_0
   m_TagString: Untagged
@@ -215,3 +216,16 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &1404858273976347724
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8695222674061044178}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.020079426, y: 0.020079423, z: 0.057843447}
+  m_Center: {x: 4.656613e-10, y: 9.313224e-10, z: 0.018921724}
