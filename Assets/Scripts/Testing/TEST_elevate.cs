@@ -4,15 +4,13 @@ using UnityEngine;
 
 public class TEST_elevate : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public string _forkTag;
+    public int _IDLimit;
+    public void OnTriggerEnter(Collider _other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(_other.CompareTag(_forkTag))
+        {
+            _other.GetComponent<ElevateCrane>().ReachedLimit(this._IDLimit);        
+        }
     }
 }

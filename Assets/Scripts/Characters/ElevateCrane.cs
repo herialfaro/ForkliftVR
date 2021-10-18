@@ -7,13 +7,12 @@ using Valve.VR.InteractionSystem;
 public class ElevateCrane : MonoBehaviour
 {
     [SerializeField] private LinearMapping leverMapping;
-    [SerializeField] private float elevationSpeed;
     [SerializeField] private Vector3 initialPosY;
     [SerializeField] private Vector3 endPosY;
     [SerializeField] private GameObject fork;
     private Rigidbody my_rigid;
     private float previousMapping;
-    private bool reachedLimit;
+    public bool reachedLimit = false;
 
     void Awake()
     {
@@ -24,69 +23,60 @@ public class ElevateCrane : MonoBehaviour
     void FixedUpdate()
     {
        
-        if(!reachedLimit)
-        {
-            AddElevationForce();
-            if(fork.transform.localPosition == endPosY)
-            {
-                reachedLimit = Stop();
-                Debug.Log("Top Limit reached");
-                previousMapping = leverMapping.value;
-                    
-            }
-            if(fork.transform.localPosition == initialPosY )
-            {
-                reachedLimit = Stop();
-                Debug.Log("Bottom Limit reached");
-                previousMapping = leverMapping.value;
-                    
-            }
+            //Stop();
+          
+                AddElevationForce();
 
-        }
-        if(leverMapping.value != previousMapping)
-        {
-            reachedLimit = false;
-        }
+                if(leverMapping.value != previousMapping && reachedLimit)
+                {
+                    reachedLimit = false;
+                }
+            
+
+        
     }
 
 
     public void AddElevationForce()
     {
-       
-            if(leverMapping.value > 0.9f )
+        if(!reachedLimit)
+        {
+            if(leverMapping.value == 1f /*&& !reachedLimit*/)
             {   
                 fork.transform.Translate(Vector3.up * Time.deltaTime);
                
             }
 
-            if (leverMapping.value < 0.1f )
+            if (leverMapping.value == 0f /*&& !reachedLimit*/ )
             {
                 fork.transform.Translate(-Vector3.up * Time.deltaTime);   
                 
             }
+
+        }
 
      
         
 
 
     }
-    public bool Stop()
+
+//TIP: IDLIMIT IF 1 MEANS TOP LIMIT, 2 MEANS BOTTOM LIMIT
+    public void ReachedLimit(int _IDLimit)
     {
-        bool _reached = false;
-        if(fork.transform.localPosition == endPosY  )
-        {
-         fork.transform.localPosition = endPosY; 
-         _reached = true; 
+            reachedLimit = true;
+            previousMapping = leverMapping.value;
+            switch(_IDLimit)
+            {
+                case 1: 
+                    fork.transform.localPosition = endPosY; 
+                break;
 
-                
-        }else if(fork.transform.localPosition == initialPosY)
-        {
-            fork.transform.localPosition=initialPosY;
-            _reached = true; 
-           
-
-        }
-        Debug.Log("It has to stop!");
-         return _reached;
+                case 2:
+                    fork.transform.localPosition = initialPosY; 
+                break;
+            }
+            
+            Debug.Log("It has to stop!");
     }
 }
