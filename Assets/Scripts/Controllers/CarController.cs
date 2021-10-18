@@ -7,6 +7,7 @@ namespace Valve.VR.InteractionSystem
     public class CarController : MonoBehaviour
     {
         public LinearMapping linearMapping;
+        public LinearMapping wheelMapping;
         private const string HORIZONTAL = "Horizontal";
         private const string VERTICAL = "Vertical";
 
@@ -14,6 +15,7 @@ namespace Valve.VR.InteractionSystem
         private float vertivalInput;
         private float currentBreakForce;
         private float currentSteerAngle;
+        public bool testing = false;
 
         
 
@@ -53,6 +55,10 @@ namespace Valve.VR.InteractionSystem
                 UpdateWheels();
                 AddForceCar();
                 ApplyBreaking();
+            }
+            if(testing)
+            {
+                HandleSteeringMapping();
             }
         }
 
@@ -120,7 +126,15 @@ namespace Valve.VR.InteractionSystem
             rearLeftWheel.steerAngle = currentSteerAngle;
             rearRightWheel.steerAngle = currentSteerAngle;
         }
-
+        private void HandleSteeringMapping()
+        {
+            float _normalizedMaping = 0f;
+      
+            _normalizedMaping = Mathf.Lerp(-1f,1f,wheelMapping.value);
+            currentSteerAngle = maxSteerAngle * _normalizedMaping;
+            rearLeftWheel.steerAngle = currentSteerAngle;
+            rearRightWheel.steerAngle = currentSteerAngle;
+        }
         private void UpdateWheels()
         {
             UpdateSingleWheel(frontLeftWheel, frontLeftTransform);
