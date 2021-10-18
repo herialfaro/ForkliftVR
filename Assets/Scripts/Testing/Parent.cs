@@ -19,10 +19,23 @@ public class Parent : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            player.SetParent(car);
+          //  player.SetParent(car);
             isParenting = true;
         }
-      
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+          //  player.SetParent(car) = null;
+            isParenting = false;
+        }
+    }
+
+    public void GetDown()
+    {
+        isParenting = false;
     }
 
 
