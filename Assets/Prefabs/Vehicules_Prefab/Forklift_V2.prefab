@@ -840,7 +840,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3360321658398996000}
-  m_Mesh: {fileID: 32123626508951205, guid: f9ddf5f0e89eb4040bc3dde522432b9d, type: 3}
+  m_Mesh: {fileID: 32123626508951205, guid: 117c0fb83cab17245b2d97c9e65a6b9b, type: 3}
 --- !u!23 &6341369074155938650
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -860,6 +860,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -7892890825181956655, guid: 117c0fb83cab17245b2d97c9e65a6b9b, type: 3}
+  - {fileID: -5825676124528932029, guid: 117c0fb83cab17245b2d97c9e65a6b9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6136,7 +6137,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3626879228313891589}
-  m_Mesh: {fileID: 8022148207607547011, guid: f9ddf5f0e89eb4040bc3dde522432b9d, type: 3}
+  m_Mesh: {fileID: 8022148207607547011, guid: 117c0fb83cab17245b2d97c9e65a6b9b, type: 3}
 --- !u!23 &7139740492323666590
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6156,6 +6157,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: -7892890825181956655, guid: 117c0fb83cab17245b2d97c9e65a6b9b, type: 3}
+  - {fileID: -5825676124528932029, guid: 117c0fb83cab17245b2d97c9e65a6b9b, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8113,6 +8115,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   linearMapping: {fileID: 4326170357893788852}
+  wheelMapping: {fileID: 0}
+  testing: 0
   motorForce: 200
   aceleractionForce: 50
   breakForce: 50
