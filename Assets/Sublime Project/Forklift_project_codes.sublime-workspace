@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"RE",
+				"reachedLimit"
+			],
+			[
 				"end",
 				"endregion"
 			],
@@ -52,11 +56,10 @@
 	"buffers":
 	[
 		{
-			"file": "/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Controllers/CarController.cs",
+			"contents": "",
 			"settings":
 			{
-				"buffer_size": 4486,
-				"encoding": "UTF-8 with BOM",
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -93,10 +96,16 @@
 	},
 	"expanded_folders":
 	[
-		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Sublime Project/Assets/Scripts"
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Sublime Project/Assets/Scripts",
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts"
 	],
 	"file_history":
 	[
+		"/D/giher/Documents/Personal/Proyectos/Flamingo Studios/TheLastFire/Assets/Scripts/Projectiles/BombParabolaProjectile.cs",
+		"/D/giher/Documents/Personal/Proyectos/Flamingo Studios/TheLastFire/Assets/Scripts/Projectiles/Projectile.cs",
+		"/D/giher/Documents/Personal/Proyectos/Flamingo Studios/TheLastFire/Assets/Scripts/Weapons/ContactWeapon.cs",
+		"/D/giher/Documents/Personal/Proyectos/Flamingo Studios/TheLastFire/Assets/Scripts/Tests/TEST_SwitchInputManager.cs",
+		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Characters/ElevateCrane.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Controllers/CarController.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/SteamVR/InteractionSystem/Core/Scripts/LinearAnimation.cs",
 		"/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Testing/TEST_MenuManager.cs",
@@ -170,29 +179,27 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/D/giher/Documents/Universidad/Septimo Semestre/ForkliftVR/Assets/Scripts/Controllers/CarController.cs",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4486,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2847,
-								2847
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"auto_name": "",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 920.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -249,6 +256,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"le",
+				"Scripts\\Characters\\ElevateCrane.cs"
+			],
 			[
 				"car",
 				"Scripts\\Controllers\\CarController.cs"

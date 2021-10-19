@@ -15,11 +15,11 @@ public class Parent : MonoBehaviour
        
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {
-          //  player.SetParent(car);
+           player.SetParent(car);
             isParenting = true;
         }
     }
@@ -28,7 +28,7 @@ public class Parent : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-          //  player.SetParent(car) = null;
+            player.SetParent(null);
             isParenting = false;
         }
     }
