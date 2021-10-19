@@ -15,7 +15,7 @@ namespace Valve.VR.InteractionSystem
         private float vertivalInput;
         private float currentBreakForce;
         private float currentSteerAngle;
-        public bool testing = false;
+      
 
         
 
@@ -51,15 +51,12 @@ namespace Valve.VR.InteractionSystem
             {
                 GetInput();
                 HandleMotor();
-                HandleSteering();
+                HandleSteeringMapping();
                 UpdateWheels();
                 AddForceCar();
                 ApplyBreaking();
             }
-            if(testing)
-            {
-                HandleSteeringMapping();
-            }
+           
         }
 
         private void HandleMotor()

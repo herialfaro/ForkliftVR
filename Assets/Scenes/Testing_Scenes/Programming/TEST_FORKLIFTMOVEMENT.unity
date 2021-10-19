@@ -2231,6 +2231,11 @@ PrefabInstance:
       propertyPath: testing
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7707510669935400080, guid: 348a05887cb9b274a86c922d3bd7ecfe,
+        type: 3}
+      propertyPath: m_Convex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7707510669935400082, guid: 348a05887cb9b274a86c922d3bd7ecfe,
         type: 3}
       propertyPath: limited
@@ -6518,6 +6523,36 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729978946}
+    - target: {fileID: 620724513237674855, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281798722448598332, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.38268527
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281798722448598332, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281798722448598332, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281798722448598332, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387885
+      objectReference: {fileID: 0}
+    - target: {fileID: 5281798722448598332, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 45.000004
+      objectReference: {fileID: 0}
     - target: {fileID: 5869747667777629282, guid: 356a900c3ceea41479ca7fe9af2695c9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6583,5 +6618,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1729978946}
+    - target: {fileID: 9159693489414706016, guid: 356a900c3ceea41479ca7fe9af2695c9,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 356a900c3ceea41479ca7fe9af2695c9, type: 3}
