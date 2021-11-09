@@ -433,6 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _forkTag: Finish
   _IDLimit: 2
+  isRotation: 0
 --- !u!1 &1577223748
 GameObject:
   m_ObjectHideFlags: 0
@@ -492,6 +493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _forkTag: Finish
   _IDLimit: 1
+  isRotation: 0
 --- !u!1 &1601758618
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,8 +2653,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6821663, y: 2.240232, z: 0.13742399}
-  m_Center: {x: 0, y: 1.1195338, z: 0.034862757}
+  m_Size: {x: 0.6821663, y: 2.082062, z: 0.13742399}
+  m_Center: {x: 0, y: 1.1986188, z: 0.034862757}
 --- !u!1 &5238273463693711055
 GameObject:
   m_ObjectHideFlags: 0
@@ -3458,7 +3460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   linearMapping: {fileID: 4326170357893788852}
   wheelMapping: {fileID: 1131878608918249396}
-  testing: 0
   motorForce: 200
   aceleractionForce: 50
   breakForce: 50
