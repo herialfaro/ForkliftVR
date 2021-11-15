@@ -77,6 +77,7 @@ namespace Valve.VR.InteractionSystem
                 rearRightWheel.motorTorque = motorForce;
                 Debug.Log("Adding force");
                 isBreaking = false;
+                FindObjectOfType<AudioManager>().Play("Reverse");
             }
 
             if (linearMapping.value > 0.9)
@@ -85,6 +86,8 @@ namespace Valve.VR.InteractionSystem
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
                 isBreaking = false;
+
+                FindObjectOfType<AudioManager>().Play("Accelerate");
             }
 
             if (linearMapping.value < 0.8 && linearMapping.value > 0.2)

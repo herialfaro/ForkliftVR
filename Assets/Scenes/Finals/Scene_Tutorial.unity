@@ -3545,8 +3545,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1201477349}
+  - component: {fileID: 1201477350}
   m_Layer: 0
-  m_Name: SoundsManager
+  m_Name: AudioManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3569,6 +3570,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1201477350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201477348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8feab3a0e3f34be448a9ce9e328a0e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: Accelerate
+    clip: {fileID: 8300000, guid: ebc6deeff5d461641a1e7d6df0245b86, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 1
+    source: {fileID: 0}
+  - name: Reverse
+    clip: {fileID: 8300000, guid: c53671ed728f7d34daa14e3f0d061cfa, type: 3}
+    volume: 1
+    pitch: 1.5
+    loop: 1
+    source: {fileID: 0}
 --- !u!1 &1260408679 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8557549365628398539, guid: 23c9dfab77f8bec40830c8f666da427d,
