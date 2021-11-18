@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4386303296917525146}
   - component: {fileID: 1962356478840153680}
   - component: {fileID: 5578683417742183560}
+  - component: {fileID: 5991025598057057966}
   m_Layer: 0
   m_Name: Mesh_Static_Cafes_0
   m_TagString: Untagged
@@ -93,3 +94,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.2640624, y: 0.8658803, z: 1.2948073}
   m_Center: {x: -0.0063777864, y: -0.05522269, z: -0.0026480556}
+--- !u!54 &5991025598057057966
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16691283323750277}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
