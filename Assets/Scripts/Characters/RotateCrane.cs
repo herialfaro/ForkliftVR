@@ -6,6 +6,7 @@ using Valve.VR.InteractionSystem;
 
 public class RotateCrane : MonoBehaviour
 {
+     AudioManager audioManager;
      [SerializeField] private LinearMapping leverMapping;
      [SerializeField] private Transform maxTarget;
      [SerializeField] private Transform minTarget;
@@ -15,7 +16,7 @@ public class RotateCrane : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame
@@ -39,14 +40,24 @@ public class RotateCrane : MonoBehaviour
             {   
           
                transform.rotation = Quaternion.RotateTowards(transform.rotation,
-                maxTarget.rotation,rotationSpeed * Time.deltaTime);
+               maxTarget.rotation,rotationSpeed * Time.deltaTime);
+                //audioManager.PlayLoopElevateUp();
+                audioManager.PlayLoopRotateUp();
             }
 
             if (leverMapping.value == 1f)
             {
                  
                 transform.rotation = Quaternion.RotateTowards(transform.rotation,
-                    minTarget.rotation,rotationSpeed * Time.deltaTime);
+                minTarget.rotation,rotationSpeed * Time.deltaTime);
+                //audioManager.PlayLoopElevateDown();
+                audioManager.PlayLoopRotateDown();
+            }
+
+            if (leverMapping.value != 0 && leverMapping.value != 1)
+            {
+                //audioManager.StopLoopElevate();
+                audioManager.StopLoopRotate();
             }
         }
         

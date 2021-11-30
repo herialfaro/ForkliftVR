@@ -100,9 +100,8 @@ namespace Valve.VR.InteractionSystem
                 motorForce = aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
-
                 isBreaking = false;
-
+                audioManager.PlayLoopGoing();
 
                 //  FindObjectOfType<AudioManager>().Play("Accelerate");
             }
@@ -111,6 +110,7 @@ namespace Valve.VR.InteractionSystem
             {
                 isBreaking = true;
                 audioManager.StopLoopReverse();
+                audioManager.StopLoopGoing();
             }
         }
 

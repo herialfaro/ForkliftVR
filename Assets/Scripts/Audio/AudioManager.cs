@@ -8,7 +8,9 @@ namespace Valve.VR.InteractionSystem
     {
         public AudioSource Forklift_AS;
         public AudioSource Elevate_AS;
+        public AudioSource Rotate_AS;
         public AudioSource Reverse_AS;
+        public AudioSource Going_AS;
 
         public AudioClip going;
         public AudioClip reverse;
@@ -71,10 +73,36 @@ namespace Valve.VR.InteractionSystem
             }
         }
 
+        public void PlayLoopRotateUp()
+        {
+            Rotate_AS.loop = true;
+            Rotate_AS.clip = elevateUp;
+            if (Rotate_AS != Rotate_AS.isPlaying)
+            {
+                Rotate_AS.Play();
+            }
+        }
+
+        public void PlayLoopRotateDown()
+        {
+            Rotate_AS.loop = true;
+            Rotate_AS.clip = elevateDown;
+            if (Rotate_AS != Rotate_AS.isPlaying)
+            {
+                Rotate_AS.Play();
+            }
+        }
+
         public void StopLoopElevate()
         {
             Elevate_AS.loop = false;
             Elevate_AS.Stop();
+        }
+
+        public void StopLoopRotate()
+        {
+            Rotate_AS.loop = false;
+            Rotate_AS.Stop();
         }
 
         public void PlayLoopReverse()
@@ -87,10 +115,26 @@ namespace Valve.VR.InteractionSystem
             }
         }
 
+        public void PlayLoopGoing()
+        {
+            Going_AS.loop = true;
+            Going_AS.clip = going;
+            if (Going_AS != Going_AS.isPlaying)
+            {
+                Going_AS.Play();
+            }
+        }
+
         public void StopLoopReverse()
         {
             Reverse_AS.loop = false;
             Reverse_AS.Stop();
+        }
+
+        public void StopLoopGoing()
+        {
+            Going_AS.loop = false;
+            Going_AS.Stop();
         }
     }
 }
