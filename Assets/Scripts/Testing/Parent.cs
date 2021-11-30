@@ -36,6 +36,7 @@ public class Parent : MonoBehaviour
     public void GetDown()
     {
         isParenting = false;
+        player.SetParent(null);
     }
 
 
