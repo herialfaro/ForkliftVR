@@ -27,4 +27,19 @@ public class TEST_MenuManager : MonoBehaviour
     {
         SceneManager.LoadScene(_sceneName);
     }
+
+    public void GoMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void RestartScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
 }

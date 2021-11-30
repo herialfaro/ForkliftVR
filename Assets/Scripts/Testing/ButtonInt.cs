@@ -5,19 +5,27 @@ using UnityEngine;
 using Valve.VR.InteractionSystem;
 using Valve.VR;
 
+namespace Valve.VR.InteractionSystem
+{
     public class ButtonInt : MonoBehaviour
     {
+        AudioManager audioManager;
         public HoverButton hoverButton;
         public CarController carController;
+        public bool sound;
 
+        
         private void Start()
         {
             this.hoverButton.onButtonDown.AddListener(OnButtonDown);
+            audioManager = FindObjectOfType<AudioManager>();
         }
 
         private void OnButtonDown(Hand hand)
         {
             StartCoroutine(DoMove());
+            audioManager.PlayStart();
+            PlaySound();
         }
 
 
@@ -30,5 +38,20 @@ using Valve.VR;
 
             yield return null;
         }
+        public void PlaySound()
+        {
+            if (!sound)
+            {
+                sound = true;
+                audioManager.PlayStart();
+            }
+            else
+            {
+                sound = false;
+                audioManager.PlayStop();
+            }
+        }
+    }
+
 }
 

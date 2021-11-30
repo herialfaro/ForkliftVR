@@ -30,6 +30,7 @@ public class TrailRender : MonoBehaviour
             nextPosIndex++;
             if (nextPosIndex >= Targets.Length)
             {
+                nextPosIndex = 0;
                 Destroy(this.gameObject);
             }
             NextPos = Targets[nextPosIndex];

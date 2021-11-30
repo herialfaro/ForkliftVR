@@ -31,7 +31,6 @@ namespace Valve.VR.InteractionSystem
 
         [SerializeField] private bool moving;
         [SerializeField] private bool isBreaking;
-        public bool playOneShot;
 
         [Header("Wheels")]
         [SerializeField] private WheelCollider frontLeftWheel;
@@ -68,7 +67,6 @@ namespace Valve.VR.InteractionSystem
                 UpdateWheels();
                 AddForceCar();
                 ApplyBreaking();
-                playOneShot = true;
 
             }
 
@@ -177,14 +175,10 @@ namespace Valve.VR.InteractionSystem
             if (!moving)
             {
                 moving = true;
-                Debug.Log("soundStop");
-                audioManager.PlayStop();
             }
             else
             {
                 moving = false;
-                Debug.Log("soundStart");
-                audioManager.PlayStart();
             }
         }
 

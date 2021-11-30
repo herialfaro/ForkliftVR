@@ -7,6 +7,8 @@ TagManager:
   - Lever
   - Fork
   - Crane
+  - TriggerStart
+  - Floor
   layers:
   - Default
   - TransparentFX

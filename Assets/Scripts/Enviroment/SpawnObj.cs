@@ -6,6 +6,8 @@ public class SpawnObj : MonoBehaviour
 {
     [SerializeField] private float nextSpawn;
     [SerializeField] private float spawnRate;
+
+    public bool startTime;
     public GameObject trailRenderObj;
     void Start()
     {
@@ -20,11 +22,19 @@ public class SpawnObj : MonoBehaviour
 
     public void ToSpawnObj()
     {
-        if (Time.time > nextSpawn)
+        if (startTime)
         {
-            nextSpawn = Time.time + spawnRate;
-            Instantiate(trailRenderObj);
-            Debug.Log("spawn");
+            if (Time.time > nextSpawn)
+            {
+                nextSpawn = Time.time + spawnRate;
+                Instantiate(trailRenderObj);
+               // Debug.Log("spawn");
+            }
         }
+    }
+
+    public void NewTimeToTrail()
+    {
+        startTime = true;
     }
 }
