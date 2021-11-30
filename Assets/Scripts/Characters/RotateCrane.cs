@@ -35,14 +35,14 @@ public class RotateCrane : MonoBehaviour
 
         if(!reachedLimit)
         {
-            if(leverMapping.value == 1f)
+            if(leverMapping.value == 0f)
             {   
           
                transform.rotation = Quaternion.RotateTowards(transform.rotation,
                 maxTarget.rotation,rotationSpeed * Time.deltaTime);
             }
 
-            if (leverMapping.value == 0f)
+            if (leverMapping.value == 1f)
             {
                  
                 transform.rotation = Quaternion.RotateTowards(transform.rotation,

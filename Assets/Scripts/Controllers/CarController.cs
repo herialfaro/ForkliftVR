@@ -6,6 +6,8 @@ namespace Valve.VR.InteractionSystem
 {
     public class CarController : MonoBehaviour
     {
+        AudioManager audioManager;
+        Rigidbody m_rigid;
         public LinearMapping linearMapping;
         public LinearMapping wheelMapping;
         private const string HORIZONTAL = "Horizontal";
@@ -13,11 +15,12 @@ namespace Valve.VR.InteractionSystem
 
         private float horizontalInput;
         private float vertivalInput;
-        private float currentBreakForce;
+        public float currentForce;
         private float currentSteerAngle;
-      
 
-        
+        [Header("CenterOfGravity")]
+        public Vector3 _centerGrav;
+
 
 
         [Header("Movement")]
@@ -28,6 +31,7 @@ namespace Valve.VR.InteractionSystem
 
         [SerializeField] private bool moving;
         [SerializeField] private bool isBreaking;
+        public bool playOneShot;
 
         [Header("Wheels")]
         [SerializeField] private WheelCollider frontLeftWheel;
@@ -40,6 +44,15 @@ namespace Valve.VR.InteractionSystem
         [SerializeField] private Transform rearLeftTransform;
         [SerializeField] private Transform rearRightTransform;
 
+
+        private void Start()
+        {
+            m_rigid = GetComponent<Rigidbody>();
+            m_rigid.centerOfMass = _centerGrav;
+            currentForce = motorForce;
+            audioManager = GetComponent<AudioManager>();
+            audioManager = FindObjectOfType<AudioManager>();
+        }
         private void FixedUpdate()
         {
             if (linearMapping == null)
@@ -55,29 +68,33 @@ namespace Valve.VR.InteractionSystem
                 UpdateWheels();
                 AddForceCar();
                 ApplyBreaking();
+                playOneShot = true;
+
             }
-           
+
+
         }
 
         private void HandleMotor()
         {
             rearLeftWheel.motorTorque = vertivalInput * motorForce;
             rearRightWheel.motorTorque = vertivalInput * motorForce;
-          
+
 
         }
 
         private void AddForceCar()
         {
-            
-            if (linearMapping.value < 0.1)
+
+            if (linearMapping.value < 0.1)//Reverse
             {
                 motorForce = -aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
                 Debug.Log("Adding force");
                 isBreaking = false;
-                FindObjectOfType<AudioManager>().Play("Reverse");
+                audioManager.PlayLoopReverse();
+                //  FindObjectOfType<AudioManager>().Play("Reverse");
             }
 
             if (linearMapping.value > 0.9)
@@ -85,21 +102,24 @@ namespace Valve.VR.InteractionSystem
                 motorForce = aceleractionForce;
                 rearLeftWheel.motorTorque = motorForce;
                 rearRightWheel.motorTorque = motorForce;
+
                 isBreaking = false;
 
-                FindObjectOfType<AudioManager>().Play("Accelerate");
+
+                //  FindObjectOfType<AudioManager>().Play("Accelerate");
             }
 
             if (linearMapping.value < 0.8 && linearMapping.value > 0.2)
-            {              
+            {
                 isBreaking = true;
+                audioManager.StopLoopReverse();
             }
         }
 
         private void ApplyBreaking()
         {
             if (isBreaking)
-            {         
+            {
                 rearRightWheel.brakeTorque = breakForce;
                 rearLeftWheel.brakeTorque = breakForce;
 
@@ -129,8 +149,8 @@ namespace Valve.VR.InteractionSystem
         private void HandleSteeringMapping()
         {
             float _normalizedMaping = 0f;
-      
-            _normalizedMaping = Mathf.Lerp(-1f,1f,wheelMapping.value);
+
+            _normalizedMaping = Mathf.Lerp(-1f, 1f, wheelMapping.value);
             currentSteerAngle = maxSteerAngle * _normalizedMaping;
             rearLeftWheel.steerAngle = currentSteerAngle;
             rearRightWheel.steerAngle = currentSteerAngle;
@@ -157,12 +177,20 @@ namespace Valve.VR.InteractionSystem
             if (!moving)
             {
                 moving = true;
+                Debug.Log("soundStop");
+                audioManager.PlayStop();
             }
             else
             {
                 moving = false;
+                Debug.Log("soundStart");
+                audioManager.PlayStart();
             }
         }
+
     }
 
+
+
 }
+

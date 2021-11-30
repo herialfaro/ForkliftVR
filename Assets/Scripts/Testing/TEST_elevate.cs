@@ -2,25 +2,36 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TEST_elevate : MonoBehaviour
+namespace Valve.VR.InteractionSystem
 {
-    public string _forkTag;
-    public int _IDLimit;
-    public bool isRotation = false;
-
-    public void OnTriggerEnter(Collider _other)
+    public class TEST_elevate : MonoBehaviour
     {
-        if(_other.CompareTag(_forkTag))
+        AudioManager audioManager;
+        public string _forkTag;
+        public int _IDLimit;
+        public bool isRotation = false;
+
+        void Awake()
         {
-            if(isRotation)
+
+            audioManager = FindObjectOfType<AudioManager>();
+        }
+
+        public void OnTriggerEnter(Collider _other)
+        {
+            if (_other.CompareTag(_forkTag))
             {
-                _other.GetComponent<RotateCrane>().ReachedLimit(this._IDLimit);
-
-                }else
+                if (isRotation)
                 {
-                    _other.GetComponent<ElevateCrane>().ReachedLimit(this._IDLimit);        
-
+                    _other.GetComponent<RotateCrane>().ReachedLimit(this._IDLimit);
+                    audioManager.StopLoopElevate();
                 }
+                else
+                {
+                    _other.GetComponent<ElevateCrane>().ReachedLimit(this._IDLimit);
+                    audioManager.StopLoopElevate();
+                }
+            }
         }
     }
 }
