@@ -11,6 +11,7 @@ public class MoveCENTERoFmAS : MonoBehaviour
     {
         m_rigid = GetComponent<Rigidbody>();
         m_rigid.centerOfMass = _centerMass.transform.position;
+        
     }
 
     // Start is called before the first frame update
