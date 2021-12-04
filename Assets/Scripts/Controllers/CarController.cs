@@ -47,7 +47,7 @@ namespace Valve.VR.InteractionSystem
         private void Start()
         {
             m_rigid = GetComponent<Rigidbody>();
-            m_rigid.centerOfMass = _centerGrav;
+            //m_rigid.centerOfMass = _centerGrav;
             currentForce = motorForce;
             audioManager = GetComponent<AudioManager>();
             audioManager = FindObjectOfType<AudioManager>();
