@@ -62,5 +62,5 @@ MonoBehaviour:
   m_camera: {fileID: 0}
   m_targetSource: 2
   m_clickAction:
-    actionPath: /actions/default/in/Teleport
+    actionPath: /actions/default/in/GrabPinch
     needsReinit: 0
