@@ -105,11 +105,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Single Acceleration
+        public virtual SteamVR_Action_Boolean HitPause
         {
             get
             {
-                return SteamVR_Actions.default_Acceleration;
+                return SteamVR_Actions.default_HitPause;
             }
         }
         

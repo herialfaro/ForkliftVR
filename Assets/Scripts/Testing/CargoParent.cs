@@ -7,20 +7,21 @@ public class CargoParent : MonoBehaviour
     public Transform pointOfParent;
     public Transform cargoTransform;
     public string _tag;
-    private bool isBeingMoved = false;
+    [SerializeField]private bool isBeingMoved = false;
     // Start is called before the first frame update
-    private void OnCollisionEnter(Collision other)
+    private void OnTriggerStay(Collision other)
     {
-        if(other.gameObject.CompareTag(_tag))
+        if(other.gameObject.CompareTag("Finish"))
         {
+
             isBeingMoved = true;
             cargoTransform.SetParent(pointOfParent);
         }
     }
 
-    private void OnCollisionExit(Collision other)
+    private void OnTriggerExit(Collision other)
     {
-        if (other.gameObject.CompareTag(_tag))
+        if (other.gameObject.CompareTag("Finish"))
         {
             isBeingMoved = false;
             cargoTransform.SetParent(null);

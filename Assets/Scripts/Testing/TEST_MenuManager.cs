@@ -30,7 +30,7 @@ public class TEST_MenuManager : MonoBehaviour
 
     public void GoMainMenu()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(0, LoadSceneMode.Single);
     }
 
     public void RestartScene()
