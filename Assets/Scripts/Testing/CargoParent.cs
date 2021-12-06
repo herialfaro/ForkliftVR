@@ -9,7 +9,7 @@ public class CargoParent : MonoBehaviour
     public string _tag;
     [SerializeField]private bool isBeingMoved = false;
     // Start is called before the first frame update
-    private void OnTriggerStay(Collision other)
+    private void OnTriggerStay(Collider other)
     {
         if(other.gameObject.CompareTag("Finish"))
         {
@@ -19,7 +19,7 @@ public class CargoParent : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit(Collision other)
+    private void OnTriggerExit(Collider other)
     {
         if (other.gameObject.CompareTag("Finish"))
         {
