@@ -31,23 +31,27 @@ namespace Valve.VR.InteractionSystem
             if (nextPanel == 1)
             {
                 txtInitial.SetActive(false);
+                Panels[2].SetActive(false);
                 Panels[1].SetActive(true);
             }
             else if (nextPanel == 2)
             {
                 Panels[1].SetActive(false);
+                Panels[3].SetActive(false);
                 Panels[2].SetActive(true);
             }
 
             else if (nextPanel == 3)
             {
                 Panels[2].SetActive(false);
+                Panels[4].SetActive(false);
                 Panels[3].SetActive(true);
             }
 
             else if (nextPanel == 4)
             {
                 Panels[3].SetActive(false);
+                Panels[5].SetActive(false);
                 Panels[4].SetActive(true);
             }
 
@@ -57,9 +61,19 @@ namespace Valve.VR.InteractionSystem
                 Panels[5].SetActive(true);
             }
 
+            if (nextPanel < 0)
+            {
+                nextPanel = 0;
+            }
+
+            
 
 
+        }
 
+        public void NegativeIndex()
+        {
+            nextPanel--;
         }
 
 
