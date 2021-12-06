@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: flowerMat
+  m_Name: flowerMat 1
   m_Shader: {fileID: 4800000, guid: 787d7485aa6482341a9f55fa37fb84f1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -30,8 +30,8 @@ Material:
     m_Floats:
     - <noninit>: 0
     - _Darken: 0
-    - _SeeThru: 0.102
+    - _SeeThru: 0
     m_Colors:
     - <noninit>: {r: 0, g: 2.018452, b: 1e-45, a: -7.580562e+31}
     - _Color: {r: 1, g: 0.36764705, b: 0.36764705, a: 1}
-    - _TintColor: {r: 0.6698113, g: 0.58521897, b: 0.20536664, a: 0.050980393}
+    - _TintColor: {r: 0.6698113, g: 0.58521897, b: 0.20536661, a: 0.007843138}

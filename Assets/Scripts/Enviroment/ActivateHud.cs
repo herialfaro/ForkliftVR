@@ -7,6 +7,9 @@ public class ActivateHud : MonoBehaviour
     public GameObject txtCarryBox;
     public GameObject pnlLose;
     public GameObject pnlFinish;
+    [Header("InterfazUser")]
+    public GameObject[] UIElements;
+    public GameObject ObjectToDesapear;
     SpawnObj spawnObj;
 
     void Start()
@@ -31,10 +34,21 @@ public class ActivateHud : MonoBehaviour
         if (other.CompareTag("Floor"))//Lose
         {
             pnlLose.SetActive(true);
+            ActivateUIInteractable();
         }
         if (other.CompareTag("Finish"))//Victory
         {
             pnlFinish.SetActive(true);
+            ActivateUIInteractable();
         }
+    }
+
+    void ActivateUIInteractable()
+    {
+        for (int i = 0; i <= UIElements.Length-1; i++)
+        {
+            UIElements[i].SetActive(true);
+        }
+            ObjectToDesapear.SetActive(false);
     }
 }

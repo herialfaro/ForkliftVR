@@ -9,6 +9,7 @@ TagManager:
   - Crane
   - TriggerStart
   - Floor
+  - Tarima
   layers:
   - Default
   - TransparentFX
