@@ -28,7 +28,13 @@ namespace Valve.VR.InteractionSystem
 
         private void Update()
         {
-            if (nextPanel == 1)
+            if (nextPanel == 0)
+            {
+                txtInitial.SetActive(true);     
+                Panels[1].SetActive(false);
+            }
+
+            else if (nextPanel == 1)
             {
                 txtInitial.SetActive(false);
                 Panels[2].SetActive(false);
