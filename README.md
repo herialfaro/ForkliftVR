@@ -1,6 +1,5 @@
 # ForkliftVR
 
-A VR application where the user learns how to operate a forklift in different scenarios.
+ForkliftVRSimulator is a virtual reality serious game developed on the Unity Engine. It was designed to teach the basics on forklift operation and our intent while programming this app was to emulate a real forklift certification course.
 
-Unity version: 2019.4.13f1 
-https://unity3d.com/unity/whats-new/2019.4.13
+This repository contains the original source code and files of the Unity project.
