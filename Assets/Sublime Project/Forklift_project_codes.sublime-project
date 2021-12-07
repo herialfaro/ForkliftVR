@@ -1,0 +1,16 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.dll",
+				"*.meta"
+			],
+			"path": "Assets\\Scripts"
+		},
+		{
+			"path": "D:\\giher\\Documents\\Universidad\\Septimo Semestre\\ForkliftVR\\Assets\\Scripts"
+		}
+	]
+}

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 8992a874d8fc78542ad4e991e3cd3770
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: A4 SPEED
+  fontNames:
+  - A4 SPEED
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: e0bca4859e3ee9d4983c60448fa7c2fe, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
