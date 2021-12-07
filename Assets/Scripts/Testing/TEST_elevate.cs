@@ -4,6 +4,11 @@ using UnityEngine;
 
 namespace Valve.VR.InteractionSystem
 {
+
+    /*<summary>
+     this code is a limit checker for the elevation fo the fork.
+     it has a callback to the fork to make it stop
+      </summary>*/
     public class TEST_elevate : MonoBehaviour
     {
         AudioManager audioManager;
